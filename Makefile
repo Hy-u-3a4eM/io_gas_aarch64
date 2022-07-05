@@ -1,5 +1,5 @@
-io=./io/
+io=./io/io
 
 all:
-	as $(io)io.s -o $(io)io.o
-	ld -s $(io)io.o -o $(io)io
+	as $(io).s -o $(io).o
+	ld -s $(io).o -o $(io)
