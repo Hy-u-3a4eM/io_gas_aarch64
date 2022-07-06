@@ -18,9 +18,6 @@ _start:
 	mov x0, #0
 	mov w8, #93
 	svc #0
-
-	mov w0, wzr
-	ret
 .Lfunc_end0:
 	.size	_start, .Lfunc_end0-_start
 
