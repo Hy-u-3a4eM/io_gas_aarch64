@@ -1,4 +1,6 @@
-io=./io/io
+dir=./io/
+files=io
+io=$(dir)$(files)
 
 all:
 	as $(io).s -o $(io).o
