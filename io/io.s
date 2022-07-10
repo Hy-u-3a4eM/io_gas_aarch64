@@ -4,14 +4,18 @@
 	.type	_start,@function
 _start:
 	mov	x0, xzr
-	ldr	x1, =io
-	ldr	x2, =io
+	adrp	x1, io
+	add	x1, x1, :lo12:io
+	adrp	x2, io
+	add	x2, x2, :lo12:io
 	mov	x8, #63
 	svc	#0
 
 	mov	x0, #1
-	ldr	x1, =io
-	ldr	x2, =io
+	adrp	x1, io
+	add	x1, x1, :lo12:io
+	adrp	x2, io
+	add	x2, x2, :lo12:io
 	mov	x8, #64
 	svc	#0
 
